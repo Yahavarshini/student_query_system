@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragging</title>
+    <link rel="stylesheet" href="Ragging.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Anti-Ragging Comittee</h1>
+        <p id="description" class="description text-center">
+          
+        </p>
+      </header>
+    <form id="survey-form" method="post" action="Ragging.php">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number"
+              >Register Number<span class="clue"></span></label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+             
+              class="form-control"
+              placeholder="Register Number"
+            />
+          </div>
+          <div class="form-group">
+            <p>Department</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select</option>
+              <option value="IT">Information Technology</option>
+              <option value="CSE">Computer Science and  Engineering</option>
+              <option value="ECE">Electronics and Communication Engineering</option>
+              <option value="EEE">Electrical and Electrical Engineering</option>
+              <option value="Bio-Tech">Bio Technology</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Year</p>
+            <label>
+              <input
+                name="year"
+                value="1"
+                type="radio"
+                class="input-radio"
+                />1</label>
+            <label>
+              <input
+                name="Year"
+                value="2"
+                type="radio"
+                class="input-radio"
+               
+              />2</label >
+      
+            <label>
+                <input
+                name="year"
+                value="3"
+                type="radio"
+                class="input-radio"
+              />3</label
+            >
+            <label>
+                <input
+                name="year"
+                value="4"
+                type="radio"
+                class="input-radio"
+              />4</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Issues: </p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your queries here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button" >
+              Submit
+            </button>
+          </div>
+    
+</body>
+</html>

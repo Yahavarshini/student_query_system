@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href='photography.html'>SQSS</a>
+                </div>
+                <nav>
+                    <ul id='MenuItems'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='Categories.html'>Categories</a></li>
+                        <li><a href='feedback.html'>Feedback</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form" name="myform" onsubmit="return vfun()">
+                                <center><h1 class="main-heading">Login Form</h1></center>
+				                <input type="text" name="Registernumber" placeholder="Register Number" required/>
+				                <input type="password" name="password" placeholder="password" required/>
+                                <div id="errorbox"></div>
+				                <button>LOGIN</button>
+				                <p class="message">Not Registered? <a href="#">Register</a></p>
+				            </form>
+                            
+                            
+
+                            <form name= "register" class="register-form" action="register.php" method="POST" onsubmit="return vfun1()">
+                                <center><h1 class="main-heading">Register Form</h1></center>
+				                <input type="number"name="Registernumber" placeholder="Register Number"required/>
+				                <input type="text" name="Email" placeholder="email-id" required/>
+				                <input type="password"name="Password" placeholder="password" required/>
+				                <button name="register" value="register">REGISTER</button>
+				                <p class="message">Already Registered?<a href="#">Login</a>
+				                </p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+                <div class="col-1">
+                    <p class='defination'>We provide a chance for the students <br> to  clear up their uncertanities by <br> posting queries on our Query Solving System.<br></p> 
+                </div>
+            </div>
+        </div>
+        <a href="chatbot.html"><button style='font-size:24px'>May I Help you? <i class='fas fa-comment-dots'></i></button></a>
+       
+    <script src="script.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
